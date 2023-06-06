@@ -151,7 +151,7 @@ class apresentacao():
                                                 font = dict(size = 14, color = "black", family = "Arial, monospace"),
                                                 align = ["left", "center"],
                                                 #fill_color = "darkslatergray",
-                                                line_color = "rgba(153,226,180,1)",
+                                                line_color = "rgba(109,129,181,1)",
                                                 #font_size = 14,
                                                 #format = [".2$"],
                                                 height = 30
