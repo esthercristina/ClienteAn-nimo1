@@ -952,7 +952,7 @@ class apresentacao():
 #####FORMATAÇÃO DE TODAS AS PÁGINAS:____________________________________________________________              
         espaco_tela1,espaco_tela2,espaco_tela3,espaco_tela4, espaco_tela5= st.columns([0.05,15,2,1,2]) #Definição de colunas nas páginas do streamlit
         with espaco_tela2: #definição de coluna para a informação abaixo:
-            espaco_tela2.title("Apresentação de Resultados da Folha :bar_chart:") #o título ao lado será inserido na "2° coluna" de todas as páginas do projeto, entre o : : é colocado o icone através do site https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
+            espaco_tela2.title("Análise da Folha de Pagamento :bar_chart:") #o título ao lado será inserido na "2° coluna" de todas as páginas do projeto, entre o : : é colocado o icone através do site https://streamlit-emoji-shortcodes-streamlit-app-gwckff.streamlit.app/
          
          #Obs1 - Os dois itens abaixo (que estão comentados) foram inativados pois foi possível colocar as duas imagens no menu. 
         #with espaco_tela5: #para inserir imagem no topo de todas as páginas do projeto - ao lado do título - a imagem ficará na "5° coluna"
@@ -1110,7 +1110,7 @@ class apresentacao():
             self.Graficonovo(graficocoluna1,
                                  colunadodataframe="Rubrica",
                                  orientação= "h",
-                                 titulodografico= "rubricas",
+                                 titulodografico= "Maiores Rubricas da Folha de Pagamento",
                                  filtrodata=filtrodatarubrica,
                                  #filtromodelo= filtromodelorubrica
                                 )
