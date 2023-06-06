@@ -56,17 +56,9 @@ def DadosOnvio():
 @st.cache_data
 def DadosAta():
     base_ata = pd.read_excel(r"atadereuniao.xlsx")
-    base_ata["Data"] = pd.to_datetime(base_ata["Data"],format="%d/%m/%Y") #alterar o formato da data
-    base_ata["Prazo para realização"]= base_ata["Data"].dt.to_period("d").dt.strftime("%d/%m/%Y")
     
-    excluir = ["Data"] #PARA EXCLUIR DA APRESENTAÇÃO UMA DETERMINADA COLUNA
-    for i in excluir:
-        base_ata.drop(columns = i, inplace= True)
 
-    base_ata["Solicitado em"] = pd.to_datetime(base_ata["Solicitado em"],format="%d/%m/%Y") #alterar o formato da data
-    base_ata["Solicitado em:"]= base_ata["Solicitado em"].dt.to_period("d").dt.strftime("%d/%m/%Y")
-
-    Ordemcorreta = ["Solicitado em:", "Atividade", "Responsável", "Departamento", "Prazo para realização", "Realizado?"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
+    Ordemcorreta = ["Atividade", "Observação", "Responsável","Departamento", "Realizado?","Solicitado em","Data Final"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
     base_ata = base_ata[Ordemcorreta]
 
     return base_ata
