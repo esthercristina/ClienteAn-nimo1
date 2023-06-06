@@ -126,7 +126,7 @@ class apresentacao():
            
         return card
 
-    def TESTETABELA(df:pd.DataFrame):
+     def TESTETABELA(self, df:pd.DataFrame):
         cardata = DadosAta()
         
         options = GridOptionsBuilder.from_dataframe(df, 
@@ -1012,26 +1012,9 @@ class apresentacao():
             with colunatitulo2:
                 colunatitulo2.title("Atas de Reunião")
                 
-            '''filtroscolunasata0,filtroscolunasata1,filtroscolunasata2= st.columns([0.01,1,0.01])
+           
             
-            ATA = DadosAta()
-            filtro_departamento = ATA["Departamento"].unique()
-            filtro_departamento = np.append(["Todos"], filtro_departamento)
-
-            with filtroscolunasata1:
-                    filtrodepartamento = st.selectbox(
-                        "Escolha o Departamento",
-                        filtro_departamento,
-                        help = "A incluir",
-                        key = "Departamento",
-                        index = 0
-                )
-
-            colunatabelaata1, colunatabelaata2 = st.columns((1,0.01))
-            self.Ata(colunatabelaata1,
-                     departamento=filtrodepartamento)'''
-            
-            TESTE = TESTETABELA(DadosAta())
+            TESTE = self.TESTETABELA(DadosAta())
 
 
 #####FORMATAÇÃO DA SEGUNDA PÁGINA - ONVIO/CHAMADO:____________________________________________________________              
