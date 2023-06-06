@@ -126,21 +126,21 @@ class apresentacao():
            
         return card
 
-     def TESTETABELA(self, df:pd.DataFrame):
-        cardata = DadosAta()
-        
-        options = GridOptionsBuilder.from_dataframe(df, 
-                                                    enableRowGroup=True, 
-                                                    enableValue=True, 
-                                                    enablePivot=True)
-        options.configure_side_bar()
-        options.configure_selection("single")
-        selection= AgGrid(df, 
-                        enable_enterprise_modules=True,
-                        gridOptions = options.build(),
-                        update_mode=GridUpdateMode.MODEL_CHANGED, 
-                        allow_unsafe_jscode=True)
-        return selection
+    def TESTETABELA(self, df:pd.DataFrame):
+            cardata = DadosAta()
+
+            options = GridOptionsBuilder.from_dataframe(df, 
+                                                            enableRowGroup=True, 
+                                                            enableValue=True, 
+                                                            enablePivot=True)
+            options.configure_side_bar()
+            options.configure_selection("single")
+            selection= AgGrid(df, 
+                            enable_enterprise_modules=True,
+                            gridOptions = options.build(),
+                            update_mode=GridUpdateMode.MODEL_CHANGED, 
+                            allow_unsafe_jscode=True)
+            return selection
        
         
 #####FUNÇÃO RÚBRICAS:_____________________________________________________________________________
