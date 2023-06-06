@@ -111,7 +111,7 @@ class apresentacao():
 
 
     def TESTETABELA(self, df:pd.DataFrame):
-            cardata = DadosAta()
+            df = DadosAta()
 
             options = GridOptionsBuilder.from_dataframe(df, 
                                                             enableRowGroup=True, 
