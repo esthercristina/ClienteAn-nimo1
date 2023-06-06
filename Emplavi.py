@@ -104,9 +104,9 @@ class apresentacao():
     def __init__(self):
     
         #self.base_extratos = pd.read_excel(r"T:\CLIENTES\GRUPO H2F\CONTROLADORIA\Extratos Jan-Mar.xlsx")
-        self.logoalldaxreduzida = Image.open(r"LOGO OFICIAL.png")
+        #self.logoalldaxreduzida = Image.open(r"LOGO OFICIAL.png")
        # self.logoh2f = Image.open(r"LOGO OFICIAL.png")
-        #self.logos = Image.open(r"LOGO OFICIAL.png")
+        self.logos = Image.open(r"LOGO OFICIAL.png")
         #self.resultadosicone = Image.open(r"resukt.png")
 
     
