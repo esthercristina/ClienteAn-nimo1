@@ -141,43 +141,7 @@ class apresentacao():
                         update_mode=GridUpdateMode.MODEL_CHANGED, 
                         allow_unsafe_jscode=True)
         return selection
-       ''' #PARA INTEGRAR FILTRO DE DEPARTAMENTO A TABELA DE ATA. 
-        if departamento == "Todos":
-            pass 
-        else:
-            cardata = cardata[cardata["Departamento"]==departamento]
-
-        Tabelaata = go.Figure(
-                            data=[go.Table(
-                                    header= dict(
-                                                values= list(cardata.columns),
-                                                font = dict( 
-                                                            size = 14, color = "rgba(35,64,143,1)", family = "Arial Black, monospace"),
-                                                #fill_color = "darkslatergray",
-                                                line_color = "rgba(109,129,181,1)",
-                                                align = ["center", "center"],
-                                                height = 30
-                                                ),
-                                    cells = dict(
-                                                values = [cardata[k].tolist() for k in cardata.columns],
-                                                font = dict(size = 14, color = "black", family = "Arial, monospace"),
-                                                align = ["left", "center"],
-                                                #fill_color = "darkslatergray",
-                                                line_color = "rgba(109,129,181,1)",
-                                                #font_size = 14,
-                                                #format = [".2$"],
-                                                height = 30
-                                                )
-                            )] )
-        Tabelaata.update_layout(
-                                height = 800,
-                                width = 1800)
-        Tabelaata.update_layout(xaxis = dict(
-                                            rangeslider = dict(
-                                                            visible = True)))
-        
-        
-        return coluna.plotly_chart(Tabelaata, use_container_width=True)'''
+       
         
 #####FUNÇÃO RÚBRICAS:_____________________________________________________________________________
 
