@@ -1055,13 +1055,13 @@ class apresentacao():
                 hc.info_card(title='Rescisão', content='O pagamento da rescisão deve ser feito 10 dias após a demissão! ', sentiment='good', title_text_size = "1.5rem",content_text_size="1.3rem",)
                
             with cc[1]:
-                hc.info_card(title='Chamados/Onvio', content='O nosso tempo de análise e retorno dos chamados no Onvio é de 72 horas!', sentiment='good', title_text_size = "1.5rem",content_text_size="1.3rem",)
+                hc.info_card(title='Chamados', content='O nosso tempo de análise e retorno dos chamados no sistema é de 72 horas!', sentiment='good', title_text_size = "1.5rem",content_text_size="1.3rem",)
 
 
 
             colunatitulo1, colunatitulo2,colunatitulo3 = st.columns((0.2,1,0.01))
             with colunatitulo2:
-                colunatitulo2.title("Atas de Reunião - DEMANDAS")
+                colunatitulo2.title("Atas de Reunião")
                 
             filtroscolunasata0,filtroscolunasata1,filtroscolunasata2= st.columns([0.01,1,0.01])
             
