@@ -185,33 +185,6 @@ class apresentacao():
         card_3= card_3.replace(",",".")
         return card_3
  
-    def tabelarubrica (self, coluna,filtrorubrica,filtrodatarubrica):
-        cardrubricas = DadosRubricas()
-
-        cardrubricas["Valor"] = cardrubricas["Valor"].map("R${:,.2%}".format) #PARA ALTERAR O FORMATO DO VALOR, COLOCANDO R$
-        
-        
-        tabelarubrica = go.Figure(
-                                data = [go.Table(
-                                                columnorder = [1,2],
-                                                columnwidth = [80,400],
-                                                header = dict(
-                                                            vlaues = [['Valor']],
-                                                line_color = "rgba(0,146,122,1)",
-                                                fill_color = "rgba(0,146,122,1)",
-                                                align =["left","center"],
-                                                font = dict(
-                                                            color = "black", size = 12),
-                                                            height = 40 ),
-                                                cells = dict(
-                                                            values = 'Valor',
-                                                            line_color='darkslategray',
-                                                            fill=dict(color=['paleturquoise', 'white']),
-                                                            align=['left', 'center'],
-                                                            font_size=12,
-                                                            height=30)
-                                                )])
-   
     def Graficonovo(self, coluna, colunadodataframe, orientação, titulodografico,filtrodata ):
         cardrubrica = DadosRubricas()
         card = cardrubrica
@@ -227,9 +200,9 @@ class apresentacao():
                                     x = card["Valor"],
                                     y = card[colunadodataframe],
                                     marker = dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1 )",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1 )",
                                                                 width =1),),
                                     name = "graficoderubrica",
                                     text = (card["Valor"].map("R${:,.0f}".format)).str.replace(",","."),
