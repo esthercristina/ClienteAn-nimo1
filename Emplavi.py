@@ -685,7 +685,7 @@ class apresentacao():
                                 go.Pie(labels= card["SITUAÇÃO"], values= card["TRATATIVA"], pull=[0.01,0.01,0.01,0.01,0.01])])
         
         Graficopercentual1.update_traces(marker= dict( #CORES DE CADA RODELA DO GRÁFICO
-                                                    colors= ["rgba(0,124,119,1)","rgba(0,67,70,1)","rgba(0,189,157,1)","rgba(76,224,210,1)","rgba(34,170,161,1)"],
+                                                    colors= ["rgba(35,64,143,1)","rgba(0,89,168,1)","rgba(102,183,226,1)","rgba(23,126,158,1)","rgba(41,69,147,1)"],
                                                     line = dict(
                                                                 color = "rgba(0,0,0,0)",
                                                                 width = 1
