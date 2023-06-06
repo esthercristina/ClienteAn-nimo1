@@ -1219,7 +1219,7 @@ class apresentacao():
                     
             with filtrosrescisaocolunas2:
                 filtrorescisao_serviço1 = st.selectbox(
-                    "Escolha a empresa",
+                    "Escolha o contrato",
                     filtrorescisao_serviço,
                     help = "A incluir",
                     key= "Rescisão_2",
@@ -1305,7 +1305,7 @@ class apresentacao():
             
             with filtrosferiascolunas2: #posição do filtro de acordo com as colunas definidas anteriormente
                 filtro_serviçoferias = st.selectbox(  #novo dataframe para o pacote de filtro
-                    "Escolha o Serviço",  #nome/frase que identificará o filtro
+                    "Escolha o Contrato",  #nome/frase que identificará o filtro
                     filtro_empresa, #objeto/variáve
                     help= "A incluir", #mensagem de suporte
                     index= 0, #ele irá selecionar o item n° x da lista
