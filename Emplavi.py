@@ -741,9 +741,9 @@ class apresentacao():
                                         x = card["SITUAÇÃO"],
                                         y = card[colunadataframe],
                                         marker= dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1)",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1)",
                                                                 width = 1),),
                                         name = "graficoonvio2",
                                         text=card["SITUAÇÃO"],
@@ -856,9 +856,9 @@ class apresentacao():
                                                     x = card[colunadataframe],
                                                     y = card["Valor"],
                                                     marker= dict(
-                                                                color = "rgba(0,146,122,1)",
+                                                                color = "rgba(35,64,143,1)",
                                                                 line = dict(
-                                                                            color = "rgba(0,146,122,0)",
+                                                                            color = "rgba(35,64,143,1)",
                                                                             width = 1),),
                                                     name = "Graficorescisao1",
                                                     text = card["nome"],
@@ -898,9 +898,9 @@ class apresentacao():
                                                 x = card["Valor"],
                                                 y = card[colunadataframe],
                                                 marker = dict(
-                                                                color = "rgba(0,146,122,1)",
+                                                                color = "rgba(35,64,143,1)",
                                                                 line = dict(
-                                                                            color = "rgba(0,146,122,0)",
+                                                                            color = "rgba(35,64,143,1)",
                                                                             width = 1),),
                                                 name = "graficorescisao1",
                                                 text = (card["Valor"].map("R$ {:,.0f}".format)).str.replace(",","."),
@@ -940,9 +940,9 @@ class apresentacao():
                                         x = card["Valor"],
                                         y = card[colunadataframe],
                                         marker=dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1)",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1)",
                                                                 width =1),),
                                         name = "garficorescisao3",
                                         text= (card["Valor"].map("R$ {:,.0f}".format)).str.replace(",","."),
