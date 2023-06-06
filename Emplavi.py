@@ -142,7 +142,7 @@ class apresentacao():
                                                 font = dict( 
                                                             size = 14, color = "rgba(35,64,143,1)", family = "Arial Black, monospace"),
                                                 #fill_color = "darkslatergray",
-                                                line_color = "rgba(153,226,180,1)",
+                                                line_color = "rgba(109,129,181,1)",
                                                 align = ["center", "center"],
                                                 height = 30
                                                 ),
@@ -1035,7 +1035,7 @@ class apresentacao():
             with open('style.css') as f:
                st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-            st.title('Para não esquecer :heavy_exclamation_mark:')
+            st.subheader('Para não esquecer :heavy_exclamation_mark:')
 
 
 
