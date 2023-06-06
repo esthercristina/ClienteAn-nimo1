@@ -324,9 +324,9 @@ class apresentacao():
                                         x = card[colunadodataframe],
                                         y = card["value"],
                                         marker = dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1 )",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1 )",
                                                                 width = 1),),
                                         name = "Graficoferias2",
                                         text=card["nome"],#.map("R$ {:,.0f}".format)).str.replace(",","."),
@@ -371,9 +371,9 @@ class apresentacao():
                                         x= card["value"], #eixo x (reto/deitado)
                                         y= card[colunadodataframe], #eixo y (reto/em pé)
                                         marker=dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1 )",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1 )",
                                                                 width =1),),
                                         name="graficoferias1",
                                         text=(card["value"].map("R$ {:,.0f}".format)).str.replace(",","."),
@@ -417,9 +417,9 @@ class apresentacao():
                                         x= card[colunadodataframe], #eixo x (reto/deitado)
                                         y= card["value"], #eixo y (reto/em pé)
                                         marker=dict(
-                                                    color = "rgba(0,146,122,1)",
+                                                    color = "rgba(35,64,143,1)",
                                                     line = dict(
-                                                                color = "rgba(0,146,122,0)",
+                                                                color = "rgba(35,64,143,1 )",
                                                                 width =1),),
                                         name="graficoferias1",
                                         text= (card["value"].map("R$ {:,.0f}".format)).str.replace(",","."), #".map" - percorre todas as linhas que estão na coluna, formatou em moeda {resumiu em zero casas decimais} ".format" é formatação de reduzir e "str.replace" substitui ponto por virgula
@@ -504,9 +504,9 @@ class apresentacao():
                                                         x = card[colunadataframe],
                                                         y = card["Valor"],
                                                         marker= dict(
-                                                                    color = "rgba(0,146,122,1)",
+                                                                    color = "rgba(35,64,143,1 )",
                                                                     line = dict(
-                                                                                color = "rgba(0,146,122,0)",
+                                                                                color = "rgba(35,64,143,1 )",
                                                                                 width = 1),),
                                                         name = "Graficoadmissao_1",
                                                         text = card["nome"],
@@ -548,9 +548,9 @@ class apresentacao():
                                                 x = card[colunadataframe],
                                                 y = card["Ativos"],
                                                 marker= dict(
-                                                            color = "rgba(0,146,122,1)",
+                                                            color = "rgba(35,64,143,1 )",
                                                             line = dict(
-                                                                        color = "rgba(0,146,122,0)",
+                                                                        color = "rgba(35,64,143,1 )",
                                                                         width = 1),),
                                                 name = "Graficoadmissao_2",
                                                 text = card["Ativos"],
@@ -593,9 +593,9 @@ class apresentacao():
                                                                 values = list(cardadmissao.columns),
                                                                 font = dict(
                                                                             size = 14, 
-                                                                            color = "rgba(3,102,102,1)",
+                                                                            color = "rgba(35,64,143,1 )",
                                                                             family = "Arial Black, monospace"),
-                                                                line_color = "rgba(153,226,180,1)",
+                                                                line_color = "rgba(35,64,143,1 )",
                                                                 align = ["center","center"],
                                                                 height = 30),
                                                     cells = dict(
@@ -604,7 +604,7 @@ class apresentacao():
                                                                             color = "black",
                                                                             family = "Arial, monospace"),
                                                                 align = ["left", "center"],
-                                                                line_color = "rgba(153,226,180,1)",
+                                                                line_color = "rgba(109,129,181,1)",
                                                                 height = 30))])
         tabelaadmissao.update_layout(
                                     height = 800,
