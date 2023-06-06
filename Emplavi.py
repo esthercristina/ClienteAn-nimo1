@@ -58,7 +58,7 @@ def DadosAta():
     base_ata = pd.read_excel(r"atadereuniao.xlsx")
     
 
-    ordemcorreta = ["Atividade", "Observação", "Responsável","Departamento", "Realizado?","Solicitado em","Data Final"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
+    ordemcorreta = ["Atividade", "Observações", "Responsável","Departamento", "Realizado?","Solicitado em","Data Final"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
     base_ata = base_ata[ordemcorreta]
 
     return base_ata
