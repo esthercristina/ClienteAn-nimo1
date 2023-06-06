@@ -1035,7 +1035,7 @@ class apresentacao():
             with open('style.css') as f:
                st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-            st.subheader('Para não esquecer :heavy_exclamation_mark:')
+            st.header('Para não esquecer :heavy_exclamation_mark:')
 
 
 
