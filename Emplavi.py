@@ -58,8 +58,8 @@ def DadosAta():
     base_ata = pd.read_excel(r"atadereuniao.xlsx")
     
 
-    Ordemcorreta = ["Atividade", "Observação", "Responsável","Departamento", "Realizado?","Solicitado em","Data Final"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
-    base_ata = base_ata[Ordemcorreta]
+    ordemcorreta = ["Atividade", "Observação", "Responsável","Departamento", "Realizado?","Solicitado em","Data Final"] #PARA INSERIR A ORDEM DE COLUNAS DESEJADA 
+    base_ata = base_ata[ordemcorreta]
 
     return base_ata
 
@@ -108,15 +108,7 @@ class apresentacao():
         Prazo4 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
         Prazo5 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
 
-    def Atafiltros(self,departamento):
-        cardatafiltro = DadosAta()
-        
-        if departamento == "Todos":
-            pass 
-        else:
-            card = cardatafiltro([cardatafiltro["Departamento"]==departamento])
-           
-        return card
+
 
     def TESTETABELA(self, df:pd.DataFrame):
             cardata = DadosAta()
