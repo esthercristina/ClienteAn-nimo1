@@ -55,7 +55,7 @@ def DadosOnvio():
 
 @st.cache_data
 def DadosAta():
-    base_ata = pd.read_excel(r"ata mes 4.xlsx")
+    base_ata = pd.read_excel(r"atadereuniao.xlsx")
     base_ata["Data"] = pd.to_datetime(base_ata["Data"],format="%d/%m/%Y") #alterar o formato da data
     base_ata["Prazo para realização"]= base_ata["Data"].dt.to_period("d").dt.strftime("%d/%m/%Y")
     
@@ -110,9 +110,9 @@ class apresentacao():
 
 #####FUNÇÃO LEMBRETES:_____________________________________________________________________________
     def Lembretes(self):
-        Prazo1 = {'bgcolor': '#6D81B5','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
-        Prazo2 = {'bgcolor': '#6D81B5','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
-        Prazo3 = {'bgcolor': '#6D81B5','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
+        Prazo1 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
+        Prazo2 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
+        Prazo3 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
         Prazo4 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
         Prazo5 = {'bgcolor': '#EFF8F7','title_color': 'green','content_color': 'green','icon_color': 'green', 'icon': 'fa fa-check-circle'}
 
@@ -126,10 +126,22 @@ class apresentacao():
            
         return card
 
-    def Ata(self,coluna,departamento):
+    def TESTETABELA(df:pd.DataFrame):
         cardata = DadosAta()
-        #print(cardata)
-        #PARA INTEGRAR FILTRO DE DEPARTAMENTO A TABELA DE ATA. 
+        
+        options = GridOptionsBuilder.from_dataframe(df, 
+                                                    enableRowGroup=True, 
+                                                    enableValue=True, 
+                                                    enablePivot=True)
+        options.configure_side_bar()
+        options.configure_selection("single")
+        selection= AgGrid(df, 
+                        enable_enterprise_modules=True,
+                        gridOptions = options.build(),
+                        update_mode=GridUpdateMode.MODEL_CHANGED, 
+                        allow_unsafe_jscode=True)
+        return selection
+       ''' #PARA INTEGRAR FILTRO DE DEPARTAMENTO A TABELA DE ATA. 
         if departamento == "Todos":
             pass 
         else:
@@ -165,7 +177,7 @@ class apresentacao():
                                                             visible = True)))
         
         
-        return coluna.plotly_chart(Tabelaata, use_container_width=True)
+        return coluna.plotly_chart(Tabelaata, use_container_width=True)'''
         
 #####FUNÇÃO RÚBRICAS:_____________________________________________________________________________
 
@@ -1036,7 +1048,7 @@ class apresentacao():
             with colunatitulo2:
                 colunatitulo2.title("Atas de Reunião")
                 
-            filtroscolunasata0,filtroscolunasata1,filtroscolunasata2= st.columns([0.01,1,0.01])
+            '''filtroscolunasata0,filtroscolunasata1,filtroscolunasata2= st.columns([0.01,1,0.01])
             
             ATA = DadosAta()
             filtro_departamento = ATA["Departamento"].unique()
@@ -1053,7 +1065,9 @@ class apresentacao():
 
             colunatabelaata1, colunatabelaata2 = st.columns((1,0.01))
             self.Ata(colunatabelaata1,
-                     departamento=filtrodepartamento)
+                     departamento=filtrodepartamento)'''
+            
+            TESTE = TESTETABELA(DadosAta())
 
 
 #####FORMATAÇÃO DA SEGUNDA PÁGINA - ONVIO/CHAMADO:____________________________________________________________              
