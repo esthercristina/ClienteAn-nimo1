@@ -10,6 +10,8 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 from plotly.subplots import make_subplots
 import hydralit_components as hc
+from st_aggrid import AgGrid, GridOptionsBuilder
+from st_aggrid.shared import GridUpdateMode
 
 
 ###PARA SUBIR BASE DE DADOS:________________________________________________________________
