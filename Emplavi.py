@@ -1005,7 +1005,7 @@ class apresentacao():
 #####MENU:____________________________________________________________        
             st.sidebar.image(self.logos, use_column_width=True) #Imagem que virá no menu, "use_column..." para centralizar a imagem
             choose = option_menu("Emplavi",  #nome no topo do menu, título do menu
-                                  ["Lembretes","Onvio/Chamados", "Rubricas", "Admissão", "Rescisão","Férias"], #abas/páginas
+                                  ["Lembretes","Chamados", "Rubricas", "Admissão", "Rescisão","Férias"], #abas/páginas
                                   icons = ['alarm','gear','pencil-square','cash-coin','cash', 'paperclip'], #ícones para cada opção de página
                                   menu_icon='list', #ícone do título do menu
                                   default_index= 0,
@@ -1084,10 +1084,10 @@ class apresentacao():
 
 
 #####FORMATAÇÃO DA SEGUNDA PÁGINA - ONVIO/CHAMADO:____________________________________________________________              
-        if choose == "Onvio/Chamados":  #Bloco de código Geral - tudo será dentro dele
+        if choose == "Chamados":  #Bloco de código Geral - tudo será dentro dele
             with open('style.css') as f:
                st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-            st.title('Solicitações de chamados no Onvio')  #Definição do título da página
+            st.title('Solicitações de chamados no Sistema')  #Definição do título da página
             
             filtroscolunasonvio1,filtroscolunasonvio2 = st.columns([1,1]) #definição de colunas para as próximas informações nesta página e tamanho (em pixel)
 
