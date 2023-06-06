@@ -1005,7 +1005,7 @@ class apresentacao():
 #####MENU:____________________________________________________________        
             st.sidebar.image(self.logos, use_column_width=True) #Imagem que virá no menu, "use_column..." para centralizar a imagem
             choose = option_menu("Emplavi",  #nome no topo do menu, título do menu
-                                  ["Lembretes","Chamados", "Rubricas", "Admissão", "Rescisão","Férias"], #abas/páginas
+                                  ["Lembretes","Onvio/Chamados", "Rubricas", "Admissão", "Rescisão","Férias"], #abas/páginas
                                   icons = ['alarm','gear','pencil-square','cash-coin','cash', 'paperclip'], #ícones para cada opção de página
                                   menu_icon='list', #ícone do título do menu
                                   default_index= 0,
