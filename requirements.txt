@@ -1,4 +1,4 @@
-﻿altair==4.2.2
+altair==4.2.2
 attrs==22.2.0
 beautifulsoup4==4.12.2
 blinker==1.6.1
@@ -13,7 +13,7 @@ entrypoints==0.4
 et-xmlfile==1.1.0
 gitdb==4.0.10
 GitPython==3.1.31
-hydralit-components==1.0.10
+hydralit_components==1.0.10
 idna==3.4
 importlib-metadata==6.3.0
 Jinja2==3.1.2
@@ -37,6 +37,7 @@ Pygments==2.15.0
 Pympler==1.0.1
 pyrsistent==0.19.3
 python-dateutil==2.8.2
+python-decouple==3.8
 pytz==2023.3
 pytz-deprecation-shim==0.1.0.post0
 requests==2.28.2
@@ -47,6 +48,7 @@ smmap==5.0.0
 soupsieve==2.4.1
 statsmodels==0.13.5
 streamlit==1.21.0
+streamlit-aggrid==0.3.4
 streamlit-option-menu==0.3.2
 tenacity==8.2.2
 toml==0.10.2
@@ -59,4 +61,3 @@ urllib3==1.26.15
 validators==0.20.0
 watchdog==3.0.0
 zipp==3.15.0
-streamlit-aggrid==0.3.4
