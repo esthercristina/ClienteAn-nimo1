@@ -95,9 +95,9 @@ def DadosAtivos():
 
 class apresentacao():
 ###PARA SUBIR AS IMAGENS:_______________________________________________________________
-    def __init__(self):
+    #def __init__(self):
     
-        self.logos = Image.open(r"LOGO OFICIAL.png")
+        #self.logos = Image.open(r"LOGO")
         
 
     
