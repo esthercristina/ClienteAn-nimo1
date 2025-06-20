@@ -93,11 +93,11 @@ def DadosAtivos():
 
 
 
-class apresentacao():
+class Apresentacao():
 ###PARA SUBIR AS IMAGENS:_______________________________________________________________
-    #def __init__(self):
+    def __init__(self):
     
-        #self.logos = Image.open(r"LOGO")
+        self.logos = "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
         
 
     
@@ -933,13 +933,13 @@ class apresentacao():
 
 
 #####FUNÇÃO PARA APRESENTAÇÕES:____________________________________________________________
-    def Apresentacao(self): #todo parametro apos isto deve aparecer sempre que a função for chamada
+    def menu(self): #todo parametro apos isto deve aparecer sempre que a função for chamada
         st.set_page_config(layout='wide') #"st" referente ao pacote do streamlit . "set_page_config" - configuração da página, opção de layout "wide"
         with st.sidebar: #barra lateral/menu
 
 #####MENU:____________________________________________________________        
             st.sidebar.image(self.logos, use_column_width=True) #Imagem que virá no menu, "use_column..." para centralizar a imagem
-            choose = option_menu("Emplavi",  #nome no topo do menu, título do menu
+            choose = option_menu("Emp",  #nome no topo do menu, título do menu
                                   ["Lembretes","Chamados", "Rubricas", "Admissão", "Rescisão","Férias"], #abas/páginas
                                   icons = ['alarm','gear','pencil-square','cash-coin','cash', 'paperclip'], #ícones para cada opção de página
                                   menu_icon='list', #ícone do título do menu
@@ -1363,5 +1363,5 @@ class apresentacao():
                                        filtro_mêsferias=filtro_mêsferias) #, inserir filtro_serviçoferias, filtro_centrodecustoferias - caso va puxar dos filtros
 
  
-objeto=apresentacao()
-objeto.Apresentacao()
+objeto=Apresentacao()
+objeto.menu()
